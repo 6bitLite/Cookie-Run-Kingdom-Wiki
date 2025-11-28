@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="skill.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twinkling Coral</title>
+
+  <style>
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Regular.otf') format('opentype');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Bold.otf') format('opentype');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Black.otf') format('opentype');
+            font-weight: 900;
+        }
+		body {
+            background-image: url('img/star-coral-background-1.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'CookieRunFont', sans-serif;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="desktop">
+
+    <button class="back-button" onclick="history.back()">Back</button>
+
+    <img src="img/skill-icon.png" alt="Skill Icon" class="skill-icon-top">
+
+    <h1 class="skill-title">Twinkling Coral</h1>
+
+    <div class="panel">
+
+      <div class="skill-text">
+        <h3>
+         Summons a twinkling coral to heal her allies, provide an HP Shield, 
+		 and increase their CRIT%, ATK SPD, and Amplify Buff. The Cookie's 
+		 lantern will shine towards the enemies, dealing periodic damage. 
+		 Star Coral Cookie's Lunar Lantern makes her immune to Sleep and Drowsy, 
+		 and will periodically restore the allies' HP instead.<br><br>
+        </h3>
+
+        <h6>
+          <b>Glowing Coral's Periodic DMG: x10 ticks over 1.2 sec; 111.4% DMG per tick
+		<br>*Status Healing Healing: 11.0% of ATK every 1.0 sec for 7.0 sec
+		<br>*Status HP Shield HP Shield: shield with 10.0% of Max HP for 12 sec
+		<br>*Status CRIT Chance Up CRIT%: +17.5% for 12 sec
+		<br>*Status ATK SPD Up ATK SPD: +20.0% for 12 sec
+		<br>*Status Amplify Buff Amplify Buff: +10.0% for 12 sec
+		<br>*Status Stun Immunity Immunity to Stun: 12 sec
+		<br>*Status Healing Lunar Lantern Healing: 10.5% of ATK<br><br>
+		Status Star Coral Star Coral
+		<br>*<br>*Team gains the Star Coral effect active for 12 sec
+		<br>*ATK +12.5%, Max HP +15.0%, DMG Resist +15.5%; stacks up to x1
+        </h6>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

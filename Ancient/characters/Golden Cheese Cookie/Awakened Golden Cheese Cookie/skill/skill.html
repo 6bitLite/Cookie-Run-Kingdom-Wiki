@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="skill.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radiance of the Immortal</title>
+
+  <style>
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Regular.otf') format('opentype');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Bold.otf') format('opentype');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Black.otf') format('opentype');
+            font-weight: 900;
+        }
+		body {
+            background-image: url('img/awakened-golden-cheese-background-1.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'CookieRunFont', sans-serif;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="desktop">
+
+    <button class="back-button" onclick="history.back()">Back</button>
+
+    <img src="img/skill-icon.png" alt="Skill Icon" class="skill-icon-top">
+
+    <h1 class="skill-title">Radiance of the Immortal</h1>
+
+    <div class="panel">
+
+      <div class="skill-text">
+        <h3>
+         Upon using her skill, Golden Cheese Cookie spreads her wings and throws her 
+		 Spears of the Immortal, dealing damage up to 8 times when there are five or 
+		 more enemies. For each enemy defeated, she gains an extra Spear of the Immortal. 
+		 The number of Spears can increase to up to 12 in total. When hit by the Spear, 
+		 enemies receive a debuff amplifying Earth-type damage and decreasing CRIT% and CRIT DMG. 
+		 <br><br>While Golden Cheese Cookie is using her skill, she will inflict Immortal's Retribution
+		 on the enemy with the lowest HP, applying Curse, Immortal's Punishment, Healing Prevention, 
+		 and dealing damage. She then deals explosion damage to nearby enemies and additional damage
+		 proportional to her Spear of the Immortal stacks. <br><br>Once per battle, Golden Cheese
+		 Cookie will revive and enter the Immortal's Return state. In this state, her DMG Resist, 
+		 ATK, and DEF will increase. Golden Cheese Cookie will also cover the team with the Dome
+		 of Gold that will take damage instead of the allies and make them immune to Knockback. 
+		 The great Immortal Golden Cheese Cookie increases all Ranged Cookies' DMG Resist and ATK.
+		 (DMG proportional to Max HP is capped at 300,000.)<br><br>
+        </h3>
+
+        <h6>
+          <b>Rally Effect<b>
+				<br>Earth's Blessing
+				<br>*Earth-type Cookies' Status Max HP UpStatus Undispellable Buff Max HP +25.0% at the beginning of battle<br><br>
+				Wings of Eternity
+				<br>*Single-hit DMG: Earth Element26.8%
+				<br>*DMG Resist Bypass: 30.0%
+				<br>*Earth-type DMG: +35.0% for 10 sec; stacks up to x1
+				<br>*CRIT%: -40.0% for 10 sec; stacks up to x1
+				<br>*CRIT DMG: -30.0% for 10 sec; stacks up to x1
+				<br>*Spear of Immortality: 20 sec; stacks up to x12<br><br>
+				Immortal's Retribution
+				<br>*Curse: 20 sec
+				<br>*Healing Prevention: 5 sec
+				<br>*Immortal's Punishment: 10 sec, 355.8% DMG to nearby enemies if debuff target is defeated
+				<br>*Single-target DMG (Cookies): Earth Element1179.1%
+				<br>*DMG Resist Bypass: 40.0% + True DMG 6% of Max HP
+				<br>*Single-target DMG (Others): Earth Element1179.1%
+				<br>*DMG Resist Bypass: 40.0% + 173.8% of ATK
+				<br>*Explosion True DMG (Cookies): 3.5% of Max HP + Earth Element50.0% DMG per Spear of Immortality stack, bypasses 35.0% of target's DMG Resist
+				<br>*Explosion DMG (Others): 250.0% of ATK + Earth Element50.0% DMG per Spear of Immortality stack, bypasses 35.0% of target's DMG Resist<br><br>
+				Immortal's Return
+				<br>*Immortal's Return: ATK +13.0%, DEF +15.0%, DMG Resist +30.0% for 12 sec<br><br>
+				<br>*Dome of Gold: blocks 100.0% of Max HP for 8 sec
+				Immortal's Embrace
+				<br>* Debuff Resist (Self): +30.0%
+				<br>*Earth's Protection: Debuff Resist +2.5%, DEF +15.0% for 10 sec upon using skill; stacks up to x3
+				<br>*Ranged Cookies: Status ATK UpStatus Undispellable Buff ATK +17.5%, Status DMG DownStatus Undispellable Buff DMG Resist +10.0%
+        </h6>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

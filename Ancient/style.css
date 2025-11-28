@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.desktop {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background image */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* FLOATING Back button */
+.back-button {
+  position: absolute;
+  left: 1177px;
+  top: 30px;
+  width: 184.25px;
+  height: 72px;
+  background: linear-gradient(180deg, #FFB84E 0%, #FF8A00 100%);
+  border: 6px solid #3C1E00;
+  border-radius: 36px;
+  box-shadow: 0 8px 0 #2A1400, inset 0 6px 15px rgba(255, 255, 255, 0.4);
+  color: white;
+  font-family: 'CookieRunFont', Impact, sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000,
+               -4px 4px 0 #000, 4px 4px 0 #000,
+               0 0 12px rgba(255, 220, 100, 0.95),
+               0 0 20px rgba(255, 180, 60, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  z-index: 9999; /* stays on top of everything */
+}
+
+/* Container for overlapping buttons */
+.button-container {
+  position: absolute;
+  top: 220px;
+  left: 55%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Buttons absolute positioned inside container */
+.button {
+  position: absolute;
+  width: 225px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+/* Overlap positions */
+.btn1 { left: 0px; z-index: 1; }
+.btn2 { left: 150px; z-index: 2; }
+.btn3 { left: 300px; z-index: 3; }
+.btn4 { left: 450px; z-index: 4; }
+.btn5 { left: 600px; z-index: 5; }

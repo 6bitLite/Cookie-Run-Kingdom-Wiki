@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="skill.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freedom's Bloom</title>
+
+  <style>
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Regular.otf') format('opentype');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Bold.otf') format('opentype');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Black.otf') format('opentype');
+            font-weight: 900;
+        }
+		body {
+            background-image: url('img/awakened-white-lily-background-1.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'CookieRunFont', sans-serif;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="desktop">
+
+    <button class="back-button" onclick="history.back()">Back</button>
+
+    <img src="img/skill-icon.png" alt="Skill Icon" class="skill-icon-top">
+
+    <h1 class="skill-title">Freedom's Bloom</h1>
+
+    <div class="panel">
+
+      <div class="skill-text">
+        <h3>
+         A flower bud that sprouted through adversity bursts open, 
+		 dealing periodic damage to nearby enemies and additional 
+		 damage depending on the number of buffs White Lily Cookie 
+		 has on herself. Enemies affected by the skill will become 
+		 entangled in Vines, unable to move or use skills for a 
+		 certain time. The Bloom of Freedom deals damage to nearby
+		 enemies, increases the Grass-type DMG they take, and applies
+		 the Seeds debuff. The Seeds will sprout after some time, 
+		 dealing damage to nearby enemies and entangling them in Vines.
+		 Seeds' sprouting time will decrease whenever the target receives
+		 Healing. <br><br>Whenever White Lily Cookie uses her skill
+		 or when any team member gains a debuff, they will gain the
+		 Dawn Lily Restoration buff. Once Dawn Lily Restoration reaches
+		 a certain number of stacks, it will dispel all debuffs and heal
+		 the targets, while granting Petals of Restoration to certain Cookies
+		 from the team. <br><br>At the start of the battle, certain Cookies
+		 from the team will gain Petals of Restoration. White Lily Cookie
+		 cannot be Silenced or Shackled. Once per battle, if White Lily Cookie
+		 is defeated, she will become unable to act but will be protected
+		 by Remembrance of Yearning for a short while.<br><br>
+        </h3>
+
+        <h6>
+          <b>Rally Effect<b>
+				<br>Will for Freedom
+				<br>*Grass-type DMG: +20.0% for 15 sec when a Grass-type Cookie uses their skill, Status DMG Down DMG Resist +15.0%; stacks up to x2<br><br>
+				<br><br>Blossoms of Adversity
+				<br>*Blossoms of Adversity DMG: x4 hits over 2 sec
+				<br>*Single-hit DMG: Grass Element149.3% of ATK; ignores 40.0% of DMG Resist
+				<br>*Extra DMG: Grass Element70.0% per x1 buff on self (capped at 700.0%); ignores 40.0% of DMG Resist
+				<br>* Grass-type DMG: +8.0% for 15 sec: stacks up to x3<br><br>
+				Vines
+				<br>*Shackles: enemies ensnared and unable to use skill for 3 sec
+				<br>*Effect after Vines duration is over or target is immune: Status MOV SPD Down MOV SPD -80.0% for 10 sec, Status Weakness DMG +30.0%; stacks up to x1
+				<br>*DMG after Vines duration is over or target is immune: Grass Element523.6% of ATK; ignores 40.0% of DMG Resist<br><br>
+				Freedom's Bloom
+				<br>*Freedom's Bloom DMG: x10 hits over 2.5 sec
+				<br>*Single-hit DMG: Grass Element24.6% of ATK + DMG equal to 27.9% of Max HP (Cookies); ignores 40.0% of DMG Resist
+				<br>*Seeds: sprout after 10 sec & Shackles applied after sprouting
+				<br>*Seeds Sprouting Time: -1 sec if targets receives Healing
+				<br>*<br>*Bloom DMG (Targets with Seed): Grass Element685.8% of ATK; ignores 40.0% of DMG Resist + DMG equal to 27.5% of Max HP (Cookies)
+				<br>*Bloom Area DMG: Grass Element652.5% of ATK (Cookies), Grass Element16.6% of ATK (Others)<br><br>
+				Dawn Lily Restoration
+				<br>*<br>*Dawn Lily Restoration: gain x1 stack per x5 debuffs on White Lily Cookie or allies; x7 when White Lily Cookie uses her skill
+				<br>*Lily Restoration: at x15 stacks, dispels debuffs on allies and heals them for 122.9% of ATK
+				<br>* Petals of Restoration
+				<br>*Petals of Restoration: x1 stack for two ally Cookies with the highest ATK upon the start of battle & when Dawn Lily Restoration triggers
+				<br>*Petals of Restoration Effect: when target is incapacitated, removes Petals of Restoration and dispels all possible incapacitating effects on them, while granting immunity from such effects for 5 sec, HP Shield, and Healing target for 17.8% of their Max HP; provides protection from x1 incapacitating effect after the duration ends
+				<br>* HP Shield: 20.0% of target's Max HP for 10 sec
+				<br>* Incapacitating Effect Protection: 15 sec<br><br>
+				Ancient Cookie
+				<br>*Passive: Status Debuff ResistStatus Undispellable Buff Debuff Resist +30.0%
+				<br>* DMG Resist: +35.0%
+				<br>*Remembrance of Yearning: Status InvulnerableStatus Undispellable Buff Invulnerability for 2.5 sec and Cooldown -50.0% when defeated, Heals for 70.0% of Max HP, Status DMG DampeningStatus Undispellable Buff DMG Dampening -25.0%, Status ATK UpStatus Undispellable BuffElement Grass Grass-type DMG +25.0%
+        </h6>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

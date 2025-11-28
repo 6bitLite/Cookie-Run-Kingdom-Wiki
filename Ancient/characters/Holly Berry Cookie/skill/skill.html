@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="skill.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lily Bud</title>
+
+  <style>
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Regular.otf') format('opentype');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Bold.otf') format('opentype');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Black.otf') format('opentype');
+            font-weight: 900;
+        }
+		body {
+            background-image: url('img/holly-berry-background-1.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'CookieRunFont', sans-serif;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="desktop">
+
+    <button class="back-button" onclick="history.back()">Back</button>
+
+    <img src="img/skill-icon.png" alt="Skill Icon" class="skill-icon-top">
+
+    <h1 class="skill-title">Oath on the Shield</h1>
+
+    <div class="panel">
+
+      <div class="skill-text">
+        <h3>
+          Let out a war cry of fury! Hollyberry Cookie charges forward and becomes a shield to her Cookie allies, 
+		  absorbing a portion of the damage they take, excluding periodic and indirect damage. While her DMG Focus is active, 
+		  she will reduce CRIT received by her allies and herself, and gain a stack of Seed of Life for every CRIT hit she receives. <br><br>
+		  
+		  Once she gains enough Seed of Life stacks, the Seed of Life will bloom into Berry of Life, enhancing the succeeding skill. 
+		  The cooldown for Hollyberry Cookie's first skill is reduced, allowing her to use it faster. While Hollyberry Cookie is using her skill, 
+		  she will briefly become resistant to interrupting effects. <br><br>
+        </h3>
+
+        <h6>
+			<b>Oath on the Shield</b>
+			<br>*Single-hit DMG: Steel Element185.5%
+			<br>*Status Stun Stun: 2 sec
+			<br>*Additional DMG to targets immune to Stun: Steel Element405.0% of ATK
+			<br>*DMG ignoring DMG Resist to targets immune to Stun: 50.0%
+			<br>*Status DMG FocusStatus Undispellable Buff DMG Focus: absorbs 35.0% of DMG allies take for 9.0 sec
+			<br>*Status CRIT Resist Up CRIT Resist: +35.0% for 9 sec<br><br>
+			Seed & Berry
+			<br>*Status Seed of LifeStatus Undispellable Buff Seed of Life: gains x1 stack for each 0.25% of Hollyberry Cookie's HP as of the start of battle lost while DMG Focus is active; blooms into Berry of Life at x20 stacks
+			<br>*Status Berry of LifeStatus Undispellable Buff Berry of Life: DMG Resist +20.0% for 10 sec, Status Healing restores 1.5% Max HP every 1 sec<br><br>
+			Ancient Cookie
+			<br>*Passive: Status Debuff ResistStatus Undispellable Buff Debuff Resist +30.0%
+			<br>*Status Max HP UpStatus Undispellable Buff Max HP: +25.0%
+			<br>*Status DMG DownStatus Undispellable Buff DMG Resist: +35.0%
+        </h6>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

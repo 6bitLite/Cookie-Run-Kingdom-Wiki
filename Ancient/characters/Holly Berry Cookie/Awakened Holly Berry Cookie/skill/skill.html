@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="skill.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freedom's Bloom</title>
+
+  <style>
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Regular.otf') format('opentype');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Bold.otf') format('opentype');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Black.otf') format('opentype');
+            font-weight: 900;
+        }
+		body {
+            background-image: url('img/awakened-holly-berry-background-1.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'CookieRunFont', sans-serif;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="desktop">
+
+    <button class="back-button" onclick="history.back()">Back</button>
+
+    <img src="img/skill-icon.png" alt="Skill Icon" class="skill-icon-top">
+
+    <h1 class="skill-title">Shield of Conviction</h1>
+
+    <div class="panel">
+
+      <div class="skill-text">
+        <h3>
+         Sound the charge! Hollyberry Cookie charges forward with her Shield of Conviction. 
+		 While her Shield of Conviction is active, she will absorb a portion of the damage allies take, 
+		 excluding periodic and indirect damage. Afterwards, she will buff ally Cookies, reducing incoming 
+		 CRIT DMG and making them resistant to DMG debuffs. <br><br>Hollyberry Cookie will gain the Seed of 
+		 Life buff depending on the amount of damage received during Shield of Conviction. Once she gains 
+		 enough Seed of Life stacks, it will bloom into Berry of Life. Steelbound Passion will activate 
+		 depending on the amount of damage received during Shield of Conviction or after a certain period 
+		 of time. Steelbound Guardian will activate once Hollyberry Cookie has gained enough stacks of Steelbound 
+		 Passion or when her HP drops below a certain level. <br><br>Entering the Steelbound Guardian state will 
+		 reset Hollyberry Cookie's Cooldown, restore HP, and enhance Shield of Conviction. Her Final Hit will be
+		 buffed depending on the damage received during Shield of Conviction. The Cooldown for Hollyberry Cookie's
+		 first skill activation is reduced, and while she is using her skill, she will briefly become resistant to
+		 interrupting effects.<br><br>
+        </h3>
+
+        <h6>
+          <b>Rally Effect<b>
+			<br>Unyielding Steel
+				<br>*Steel-type Cookie DMG Resist Bypass: +1.0% per 1.0% Extra Max HP (capped at 12.5%)
+				<br>*Steel-type Cookie Area DMG: 5.0% of Max HP every 5 sec<br><br>
+				Steelforged
+				<br>*Triggered when Steel-type Cookie HP drops below 30.0%
+				<br>*Healing for self and Hollyberry Cookie: 10.0% of Hollyberry Cookie's Max HP<br><br>
+				Hollyberry Shield
+				<br>*Single-hit DMG: Steel Element219.1% of ATK, deals up to 3 hits
+				<br>*Extra DMG for Targets Immune to Stun: Steel Element405.0% of ATK, Status Stun Stun 2 sec
+				<br>*Extra DMG Resist Bypass for Targets Immune to Stun: 50.0%
+				<br>*Final Hit DMG: 24.9% of Max HP, ignores 40.0% of DMG Resist<br><br>
+				Seed & Berry
+				<br>*Seed of Life: gains x1 stack for each 0.25% of Hollyberry Cookie's HP as of the start of battle lost during Shield of Conviction; blooms into Berry of Life at x20 stacks
+				<br>*Berry of Life: DMG Resist +20.0% for 10 sec, Status Healing restores 1.5% Max HP every 1 sec<br><br>
+				Shield of Conviction
+				<br>*Active for 13 sec
+				<br>* DMG Focus: absorbs 45.0% of DMG received by allies
+				<br>*DMG Dampening: -35.0% to final amount of DMG received
+				<br>* CRIT DMG: -35.0% for 13 sec; stacks up to x1
+				<br>*DMG Debuff Resist: +35.0% for 13 sec; stacks up to x1<br><br>
+				Steelbound Passion
+				<br>* Steelbound Passion: gains x1 stack every 1 sec and gains x1 stack for each 5.0% of Hollyberry Cookie's HP as of the start of battle lost during Shield of Conviction
+				<br>*Steelbound Guardian is activated when gaining x20 Steelbound Passion stacks or HP dropping below 25.0%<br><br>
+				Steelbound Guardian
+				<br>* Invulnerability for 5 sec
+				<br>*Restores 40.0% of Max HP and Cooldown reset
+				<br>*Shield of Conviction DMG Focus and DMG Dampening maintained until the end of battle
+				<br>*DMG Focus +60.0%, DMG Dampening +50.0%
+				<br>*Extra Final Hit DMG: 155.0% of Hollyberry Cookie's HP lost during Shield of Conviction (capped at 40.0% of Max HP), DMG Resist Bypass 40.0%<br><br>
+				Ancient Cookie
+				<br>*Passive: Status Debuff ResistStatus Undispellable Buff Debuff Resist +30.0%
+				<br>*Status Max HP UpStatus Undispellable Buff Max HP: +25.0%
+				<br>*Status DMG DownStatus Undispellable Buff DMG Resist: +35.0%
+        </h6>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

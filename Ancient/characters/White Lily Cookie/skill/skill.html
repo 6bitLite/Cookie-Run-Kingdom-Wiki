@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="skill.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lily Bud</title>
+
+  <style>
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Regular.otf') format('opentype');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Bold.otf') format('opentype');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Black.otf') format('opentype');
+            font-weight: 900;
+        }
+		body {
+            background-image: url('img/pure-vanilla-background-1.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'CookieRunFont', sans-serif;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="desktop">
+
+    <button class="back-button" onclick="history.back()">Back</button>
+
+    <img src="img/skill-icon.png" alt="Skill Icon" class="skill-icon-top">
+
+    <h1 class="skill-title">Lily Bud</h1>
+
+    <div class="panel">
+
+      <div class="skill-text">
+        <h3>
+         A pure white lily bud bursts open, dealing periodic damage to enemies and additional 
+		 damage depending on the number of buffs White Lily Cookie has on herself. Enemies 
+		 affected by the skill will become entangled in Vines, becoming unable to move or use skills. 
+		 <br><br>Whenever her or an ally Cookie gains a debuff, she will gain the Lily Restoration buff, 
+		 and whenever White Lily Cookie uses her skill, she will gain Lily Restoration buffs. 
+		 Once Lily Restoration reaches a certain number of stacks, it will purify all current 
+		 debuffs on the allies and heal them.<br><br>
+        </h3>
+
+        <h6>
+          <b>Lily Bud</b>
+			<br>*Lily Bud Periodic DMG: up to x3 hits over a span of 1.2 sec; Grass Element178.0% DMG per hit
+			<br>*DMG (Cookies): 22.5% of Max HP
+			<br>*Extra DMG: Grass Element15.0% per x1 buff on self; capped at +500.0%
+			<br>*DMG Resist Bypass (All Skill DMG): 30.0%<br><br>
+			Status Vines Vines
+			<br>*Vines: enemies ensnared and unable to use skill for 2.5 sec
+			<br>*Effect after Vines duration is over or target is immune: Status MOV SPD Down MOV SPD -80.0% for 8 sec, Status Weakness DMG +25.0%; stacks up to x1
+			<br>*DMG after Vines duration is over or target is immune: Grass Element155.0% of ATK<br><br>
+			Restoration Lily Restoration
+			<br>*Lily Restoration Passive: gain x1 stack per x5 debuffs on White Lily Cookie or allies, activated x5 upon using her skill
+			<br>*Lily Restoration: at x21 stacks, dispels allies’ debuffs and heals them for 122.9% of ATK<br><br>
+			Ancient Cookie
+			<br>*Status Debuff ResistStatus Undispellable Buff Passive: Debuff Resist +30.0%
+        </h6>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

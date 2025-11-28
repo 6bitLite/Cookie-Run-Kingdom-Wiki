@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="skill.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awakened King</title>
+
+  <style>
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Regular.otf') format('opentype');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Bold.otf') format('opentype');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Black.otf') format('opentype');
+            font-weight: 900;
+        }
+		body {
+            background-image: url('img/awakened-dark-cacao-background-1.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'CookieRunFont', sans-serif;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="desktop">
+
+    <button class="back-button" onclick="history.back()">Back</button>
+
+    <img src="img/skill-icon.png" alt="Skill Icon" class="skill-icon-top">
+
+    <h1 class="skill-title">Awakened King</h1>
+
+    <div class="panel">
+
+      <div class="skill-text">
+        <h3>
+         With his newly found strength, swings the Chocoblade to deal damage, 
+		 inflict Injury and Fatal Wound, and apply a CRIT DMG debuff. After this, 
+		 Dark Cacao Cookie will borrow the strength of the Twin Dragons for a forceful 
+		 downward strike, increasing Darkness-type damage and applying Consuming 
+		 Darkness and Gloom. <br><br>At the beginning of battle, Dark Cacao Cookie
+		 will increase the allies' DMG Resist with a Royal Decree. Inspired by his Kingly
+		 Presence, he will gain increased DEF and Max HP and Charge Cookies will gain increased
+		 ATK. Channel Darkness will become more efficient for Dark Choco Cookie, and his DMG
+		 Resist will increase.<br><br>
+        </h3>
+
+        <h6>
+          <b>Rally Effect<b>
+				<br>Channel Darkness
+				<br>*Portion of Darkness-type DMG dealt by Cookies returns as restored HP (but not counted as Healing).
+				<br>*Cookies: Darkness Element2.0% of DMG + Darkness Element0.5% per stack of Consuming Darkness; capped at Darkness Element10.0%
+				<br>*Others: Darkness Element2.5% of DMG + Darkness Element0.5% per stack of Consuming Darkness; capped at Darkness Element10.0%<br><br>
+				Swing of the Chocoblade
+				<br>*Darkness Element49.2% of ATK + Darkness Element60.0% of additional DMG per 1% of Injury: capped at Darkness Element2,000.0%
+				<br>*Silence: 2.0 sec
+				<br>*Injury: Max HP -20.0% for 10.0 sec; stacks up to x2
+				<br>*Charge and Defense Defense Cookies Extra Status InjuryStatus Undispellable Debuff Injury: Max HP -12.5% for 10.0 sec; stacks up to x2
+				<br>*Fatal Wound: Injury stacks capped at 50.0% for 10.0 sec
+				<br>*CRIT DMG: -12.5% for 10 sec; stacks up to x2<br><br>
+				Twin Dragons
+				<br>*Darkness Element691.5% of ATK + Darkness Element135.0% of additional DMG per stack of Consuming Darkness; capped at Darkness Element900.0%
+				<br>*DMG Resist Bypass: 30.0%
+				<br>*Darkness-type DMG: +20.0% for 10.0 sec, stacks up to x2
+				<br>*Consuming Darkness: CRIT% -25.0% for 25.0 sec + Healing -5.0%; stacks up to x2
+				<br>*Gloom (Cookies): prevents Healing for 5.0 sec + DEF -30.0%
+				<br>*Gloom (Others): prevents Healing for 15 sec + DEF -20.0%
+				<br>*Down ATK: -28.0% for 10.0 sec, stacks up to x1<br><br>
+				Royal Decree
+				<br>*Self: Immunity to Petrified & Injury + Status Debuff ResistStatus Undispellable Buff Debuff Resist +30.0%
+				<br>*Allies: Status DMG DownStatus Undispellable Buff DMG Resist +25.0% at the beginning of the battle<br><br>
+				Kingly Presence
+				<br>*Self: Status DEF UpStatus Undispellable Buff DEF +15.0%, Status Max HP UpStatus Undispellable Buff Max HP +25.0%
+				<br>*Charge Cookies: Status ATK UpStatus Undispellable Buff ATK +10.0%
+				<br>*Dark Choco Cookie: Channel Darkness +50.0%, Status DMG DownStatus Undispellable Buff DMG Resist +25.0%
+        </h6>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

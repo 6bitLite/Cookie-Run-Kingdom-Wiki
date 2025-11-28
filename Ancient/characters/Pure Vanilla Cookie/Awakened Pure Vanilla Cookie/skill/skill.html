@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="skill.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warmth of Compassion</title>
+
+  <style>
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Regular.otf') format('opentype');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Bold.otf') format('opentype');
+            font-weight: 700;
+        }
+        @font-face {
+            font-family: 'CookieRunFont';
+            src: url('./font/CookieRunFont_OTF/CookieRun Black.otf') format('opentype');
+            font-weight: 900;
+        }
+		body {
+            background-image: url('img/awakened-pure-vanilla-background-1.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'CookieRunFont', sans-serif;
+        }
+  </style>
+</head>
+
+<body>
+  <div class="desktop">
+
+    <button class="back-button" onclick="history.back()">Back</button>
+
+    <img src="img/skill-icon.png" alt="Skill Icon" class="skill-icon-top">
+
+    <h1 class="skill-title">Warmth of Compassion</h1>
+
+    <div class="panel">
+
+      <div class="skill-text">
+        <h3>
+         Pure Vanilla Cookie fully heals the team and reduces Injury. 
+		 He will further heal the team for the amount of HP recovered 
+		 from the reduced Injury. Provides HP Shield for all members of
+		 the team. Whenever these HP Shields are dispelled, or the target
+		 becomes unable to have an HP Shield, periodically heals the team
+		 for a certain period of time. Next, he will summon Shards of Light
+		 that will heal your team and deal damage to enemies, applying the 
+		 Shards of Light debuff. <br><br>As long as Pure Vanilla Cookie
+		 participates in the battle, he will select a Cookie and illuminate
+		 them with the Light of Truth to restore their HP when it drops below a
+		 certain point. Pure Vanilla Cookie will keep restoring their HP periodically
+		 for some more time. This effect can trigger only once in a certain period of
+		 time. <br><br>As someone who has witnessed both the Truth and Deceit,
+		 Pure Vanilla Cookie will grant the team immunity from Silence and Cooldown 
+		 debuffs at the beginning of battle if there are no other Healing Cookies in
+		 the rear row. Once per battle, when his own HP drops below a certain point,
+		 he will restore his HP, gain an HP Shield, and dispel all possible debuffs on
+		 himself. Additionally, once per battle, Pure Vanilla Cookie will revive one
+		 team member, himself included. However, this effect will not trigger if the entire
+		 team is defeated mid-revival or if the target has already been revived.
+		 <br><br>The higher Pure Vanilla Cookie's DMG Resist stat, the stronger Cooldown
+		 buff he will receive at the beginning of the battle. His regular attacks will heal
+		 up to 5 targets and increase their Amplify Buffs.<br><br>
+        </h3>
+
+        <h6>
+          <b>Rally Effect<b>
+				<br>Warmth of Compassion
+				<br>*Team Status Max HP UpStatus Undispellable Buff Max HP +15.0%, Status DMG DownStatus Undispellable Buff DMG Resist +15.0% at the beginning of battle<br><br>
+				Warmth of Compassion
+				<br>*Warmth of Compassion Healing: 2.0% of Max HP + 70.2% of ATK for the five targets with the lowest HP
+				<br>*Shards of Light Healing: 20.3% of ATK
+				<br>*Shards of Light DMG: Light Element562.1% of ATK
+				<br>* Shards of Light: DMG dealt -10.0%, ATK -10.0% for 10 sec; stacks up to x1
+				<br>* HP Shield: blocks damage equal to 20.0% of target's Max HP for 10 sec
+				<br>*HP Shield Healing: 1.0% of Max HP every 1 sec for 7 sec if HP Shield is dispelled or target becomes unable to have one
+				<br>*Injury Alleviation: -50.0%<br><br>
+				Light of Truth
+				<br>*Triggers when Cookie's HP drops below 50.0%
+				<br>*Healing: 112.2% of ATK + 1.5% of ATK per each 1% of HP lost + 50.0% of ATK every 1 sec for 5 sec
+				<br>*<br>*Light of Truth Status HP Shield HP Shield: 110.0% of Healing exceeding Max HP is converted to HP Shield holding for 3 sec (capacity is capped at 20.0% of Max HP)
+				<br>*Triggers once every 14 sec<br><br>
+				Compassion
+				<br>*Triggers if there are no other Healing Healing Cookies in the rear row and grants the team immunity from Silence and Cooldown debuffs
+				<br>* Healing (self): when HP drops below 80.0%, restores 20.0% of Max HP and gains Status HP Shield HP Shield blocking damage equal to 25.0% of Max HP for 10 sec
+				<br>*Revival: revives a defeated Cookie after 7 sec with 30.0% HP<br><br>
+				Ancient Light
+				<br>*Passive: gains Status Debuff ResistStatus Undispellable Buff Debuff Resist +30.0%
+				<br>*Cooldown: -0.4% for each 1.0% of DMG Resist increased (capped at -20.0%)
+				<br>*Amplify Buff: +25.0% for 10 sec for regular attack Healing targets; stacks up to x1
+				<br>*Blessing of Light: gains Amplify Buff +7.0, DMG Resist +10.0% for 10 sec upon using skill; stacks up to x3
+				<br>*Reflected DMG: -50.0%
+        </h6>
+
+      </div>
+
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,467 @@
+/* --- 1. GENERAL & CONTAINER SETUP --- */
+body {
+    background-color: #260f0f;
+}
+
+.character-container {
+    position: relative;
+    min-height: 980px;
+    /* gives room + breathing space below */
+    padding-bottom: 100px;
+    /* extra space under the buttons */
+    box-sizing: border-box;
+}
+
+/* Character image & other elements unchanged */
+.character-image {
+    position: absolute;
+    left: 0;
+    top: 205px;
+    width: 229px;
+    height: 229px;
+    object-fit: cover;
+}
+
+
+.cookie-type-box {
+    position: absolute;
+    left: 611px;
+    top: 205px;
+    width: 309px;
+    height: 103px;
+    object-fit: contain;
+}
+
+/* 🎯 UPDATED: HORIZONTAL CENTERING */
+.title-box {
+    position: absolute !important;
+    left: 50% !important;
+    top: 320px !important;                    /* space under the icon */
+    width: 705px !important;
+    height: 82px !important;
+    transform: translateX(-50%) !important;
+
+    color: #FFFFFF;
+    font-family: 'CookieRunFont', sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    text-shadow:
+        -5px -5px 0 #000, 5px -5px 0 #000,
+        -5px 5px 0 #000, 5px 5px 0 #000,
+        -5px 0 0 #000, 5px 0 0 #000,
+        0 -5px 0 #000, 0 5px 0 #000,
+        -4px -4px 0 #000, 4px -4px 0 #000,
+        -4px 4px 0 #000, 4px 4px 0 #000,
+        0 0 12px rgba(255,220,100,0.9),
+        0 0 20px rgba(255,180,60,0.7);
+
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+/* 🎯 UPDATED: HORIZONTAL CENTERING */
+.description-box {
+    position: absolute;
+    left: 50%; /* Start at the center */
+    top: 460px; /* Fixed vertical position */
+    transform: translateX(-50%); /* Shift left by half its width */
+
+    display: flex;
+    
+    /* 2. Stack the contents (image and text) vertically */
+    flex-direction: column; 
+    
+    /* 3. Center the stack of contents horizontally */
+    align-items: center;    
+    
+    /* 4. Center the stack of contents vertically */
+    justify-content: center;
+
+
+
+
+
+
+    width: 1200px;
+    height: 1500px;
+    padding: 24px 28px;
+    /* slightly more padding so text doesn’t touch the glow */
+    box-sizing: border-box;
+
+    /* 1. Deep royal purple semi-transparent background */
+    background: linear-gradient(135deg,
+                rgba(48, 18, 77, 0.94) 0%,
+                rgba(34, 10, 62, 0.97) 100%);
+
+    /* 2. Perfectly rounded corners */
+    border-radius: 24px;
+
+    /* 3. The magic: inner golden border that follows the curve exactly */
+    outline: 4px solid transparent;
+    /* creates space */
+    background:
+        linear-gradient(135deg, rgba(48, 18, 77, 0.94), rgba(34, 10, 62, 0.97)),
+        linear-gradient(45deg, #FFD788, #B57B3A);
+    /* gold gradient */
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    /* gold only on border */
+
+    /* 4. Soft outer golden glow + inner shadow */
+    box-shadow:
+        0 0 25px rgba(255, 215, 120, 0.5),
+        /* outer golden aura */
+        inset 0 0 40px rgba(0, 0, 0, 0.7);
+    /* deep inner shadow */
+
+    /* 5. Subtle corner sparkle (exactly like in-game) */
+    background-image:
+        radial-gradient(circle at top left, rgba(255, 215, 120, 0.35) 0%, transparent 15%),
+        radial-gradient(circle at top right, rgba(255, 215, 120, 0.35) 0%, transparent 15%),
+        radial-gradient(circle at bottom left, rgba(255, 215, 120, 0.35) 0%, transparent 15%),
+        radial-gradient(circle at bottom right, rgba(255, 215, 120, 0.35) 0%, transparent 15%);
+
+    /* Text & scroll */
+    color: #ffffff;
+    font-family: "CookieRun", Georgia, serif;
+    font-size: 18px;
+    line-height: 1.65;
+    text-shadow: 0 0 10px rgba(255, 215, 120, 0.7);
+    overflow-y: auto;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.back-button {
+    position: absolute;
+    left: 1177px;
+    top: 63px;
+    width: 184.25px;
+    height: 72px;
+
+    /* Same delicious CRK look as the big buttons */
+    background: linear-gradient(180deg, #FFB84E 0%, #FF8A00 100%);
+    border: 6px solid #3C1E00;
+    /* slightly thinner border for smaller size */
+    border-radius: 36px;
+    box-shadow: 0 8px 0 #2A1400,
+        /* chocolate drip shadow */
+        inset 0 6px 15px rgba(255, 255, 255, 0.4);
+
+    color: white;
+    font-family: Impact, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow:
+        -3px -3px 0 #3C1E00,
+        3px -3px 0 #3C1E00,
+        -3px 3px 0 #3C1E00,
+        3px 3px 0 #3C1E00;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Shine streak */
+.back-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0%,
+    100% {
+        left: -100%;
+    }
+
+    50% {
+        left: 100%;
+    }
+}
+
+/* Hover & press */
+.back-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 0 #2A1400, inset 0 6px 15px rgba(255, 255, 255, 0.5);
+}
+
+.back-button:active {
+    transform: translateY(6px);
+    box-shadow: 0 4px 0 #2A1400, inset 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* ———————————————————————————
+ 	UPDATED: TRUE COOKIE RUN KINGDOM BUTTONS (ALIGNMENT FIXED)
+ 	——————————————————————————— */
+/* —————— BOTTOM BUTTONS – PERFECTLY ALIGNED, NO LADDER —————— */
+.story-button,
+.builds-button,
+.skills-button {
+    position: absolute;
+    width: 355px;
+    height: 134px;
+
+    /* Exact same CRK look */
+    background: linear-gradient(180deg, #FFB84E 0%, #FF8A00 100%);
+    border: 8px solid #3C1E00;
+    border-radius: 67px;
+    box-shadow: 0 12px 0 #2A1400, inset 0 8px 20px rgba(255, 255, 255, 0.4);
+
+    color: white;
+    font-family: Impact, sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: -4px -4px 0 #3C1E00, 4px -4px 0 #3C1E00,
+        -4px 4px 0 #3C1E00, 4px 4px 0 #3C1E00;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    overflow: hidden;
+}
+
+/* Shine effect */
+.story-button::before,
+.builds-button::before,
+.skills-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: shine 3s infinite;
+}
+
+/* @keyframes shine is defined above */
+
+/* Hover & press */
+.story-button:hover,
+.builds-button:hover,
+.skills-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 0 #2A1400, inset 0 8px 20px rgba(255, 255, 255, 0.5);
+}
+
+.story-button:active,
+.builds-button:active,
+.skills-button:active {
+    transform: translateY(8px);
+    box-shadow: 0 4px 0 #2A1400, inset 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+/* —————— THIS IS THE KEY: EXACT SAME TOP FOR ALL THREE —————— */
+.story-button {
+    left: 80px;
+    top: 795px;
+}
+
+.builds-button {
+    left: 543px;
+    top: 795px;
+}
+
+/* ← same top */
+.skills-button {
+    left: 1006px;
+    top: 795px;
+}
+
+/* ← same top */
+
+/* Add this new class to your existing CSS */
+.character-image.special-size {
+    left: 52px !important;
+    /* instead of 0 */
+    top: 164px !important;
+    /* instead of 205px */
+    width: 526px !important;
+    /* instead of 621px */
+    height: 552px !important;
+    object-fit: contain;
+    /* important: prevents stretching/distortion */
+}
+
+/* Optional: matching golden scrollbar */
+.description-box::-webkit-scrollbar {
+    width: 12px;
+}
+
+.description-box::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.description-box::-webkit-scrollbar-thumb {
+    background: linear-gradient(#FFD788, #B57B3A);
+    border-radius: 10px;
+    border: 2px solid rgba(48, 18, 77, 0.9);
+}
+
+/* ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← */
+/* ADD EVERYTHING BELOW THIS LINE (at the very end of index.css) */
+/* ————————————————————
+ 	BUTTONS – 100% OFFICIAL CRK FONT + TEXT OUTLINE/GLOW
+ 	———————————————————— */
+.back-button,
+.story-button,
+.builds-button,
+.skills-button {
+    font-family: 'CookieRunFont', Impact, sans-serif !important;
+    font-weight: 900 !important;
+    /* uses your CookieRun Black.otf */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Big bottom buttons */
+.story-button,
+.builds-button,
+.skills-button {
+    font-size: 52px !important;
+}
+
+/* Small back button */
+.back-button {
+    font-size: 28px !important;
+}
+
+/* THE EXACT IN-GAME BLACK OUTLINE + GOLDEN GLOW */
+.back-button,
+.story-button,
+.builds-button,
+.skills-button {
+    text-shadow:
+        /* Thick black outline */
+        -5px -5px 0 #000, 5px -5px 0 #000,
+        -5px 5px 0 #000, 5px 5px 0 #000,
+        -5px 0 0 #000, 5px 0 0 #000,
+        0 -5px 0 #000, 0 5px 0 #000,
+        -4px -4px 0 #000, 4px -4px 0 #000,
+        -4px 4px 0 #000, 4px 4px 0 #000,
+
+        /* Golden glow – exactly like the game */
+        0 0 15px rgba(255, 220, 100, 0.95),
+        0 0 25px rgba(255, 180, 60, 0.85),
+        0 0 35px rgba(255, 140, 0, 0.7);
+}
+
+/* Slightly softer glow for the smaller Back button */
+.back-button {
+    text-shadow:
+        -4px -4px 0 #000, 4px -4px 0 #000,
+        -4px 4px 0 #000, 4px 4px 0 #000,
+        -4px 0 0 #000, 4px 0 0 #000,
+        0 -4px 0 #000, 0 4px 0 #000,
+        0 0 12px rgba(255, 220, 100, 0.95),
+        0 0 20px rgba(255, 180, 60, 0.85);
+}
+
+/* ←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←←← */
+/* ADD THIS AT THE VERY END OF index.css */
+.builds-button,
+.story-button,
+.skills-button,
+.back-button {
+    text-transform: none !important;
+    /* allows normal capitalization */
+}
+
+/* ——————————————————————
+ 	 	FORCE REAL COOKIERUN FONT EVERYWHERE
+ 	 	—————————————————————— */
+.title-box {
+    font-family: 'CookieRunFont', sans-serif !important;
+    font-weight: 700 !important;
+    /* CookieRun Bold */
+}
+
+.description-box,
+.description-box p {
+    font-family: 'CookieRunFont', Georgia, serif !important;
+    font-weight: 400 !important;
+    /* CookieRun Regular */
+    font-size: 19px;
+    line-height: 1.65;
+    color: #FFFFFF;
+    text-shadow: 0 0 8px rgba(255, 215, 120, 0.4), 0 2px 4px #000;
+}
+
+/* Buttons – use real CookieRun Black */
+.back-button,
+.story-button,
+.builds-button,
+.skills-button {
+    font-family: 'CookieRunFont', Impact, sans-serif !important;
+    font-weight: 900 !important;
+    /* CookieRun Black */
+}
+
+/* 🎯 CENTERED: CHARACTER ICON (ALREADY CORRECT) */
+.character-icon {
+    position: absolute !important;
+    left: 50% !important; /* Start at the center */
+    top: 170px !important;
+    width: 132px !important;
+    height: 126px !important;
+    transform: translateX(-50%) !important; /* Shift left by half its width */
+    object-fit: contain !important;
+    pointer-events: none !important;
+    z-index: 25 !important;
+}
+
+/* REMOVE UNDERLINE FROM ALL BUTTON LINKS */
+/* FINAL FIX – KILLS THE UNDERLINE FOREVER */
+a.story-button,
+a.builds-button,
+a.skills-button,
+a.back-button,
+.story-button,
+.builds-button,
+.skills-button,
+.back-button {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/* Also kill it on hover/focus/active */
+a.story-button:hover,
+a.builds-button:hover,
+a.skills-button:hover,
+a.back-button:hover,
+a.story-button:focus,
+a.builds-button:focus,
+a.skills-button:focus,
+a.back-button:focus,
+a.story-button:active,
+a.builds-button:active,
+a.skills-button:active,
+a.back-button:active {
+    text-decoration: none !important;
+    outline: none !important;
+}

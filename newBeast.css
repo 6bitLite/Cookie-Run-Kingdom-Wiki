@@ -1,0 +1,168 @@
+
+body {
+    background-color: #260f0f;
+    
+}
+
+.burning-element {
+    
+    position: absolute;
+    
+    left: 70px; 
+    
+    top: 300px; 
+    
+    
+     
+    
+    
+    
+    z-index: 5; 
+}
+
+.mystic_element {
+    
+    position: absolute;
+    
+    left: 330px; 
+    
+    top: 300px; 
+    
+    
+     
+    
+
+    z-index: 5; 
+}
+
+.shadow_element {
+    position: absolute;
+    /* Change 530px to 533px for mathematically consistent spacing, 
+       or manually adjust it (e.g., 525px) until the gap looks right. */
+    left: 590px; 
+    top: 300px; 
+    z-index: 5; 
+}
+
+.eternal_element {
+    position: absolute;
+    /* Change 530px to 533px for mathematically consistent spacing, 
+       or manually adjust it (e.g., 525px) until the gap looks right. */
+    left: 850px; 
+    top: 300px; 
+    z-index: 5; 
+}
+
+.silent_element {
+    position: absolute;
+    /* Change 530px to 533px for mathematically consistent spacing, 
+       or manually adjust it (e.g., 525px) until the gap looks right. */
+    left: 1110px; 
+    top: 300px; 
+    z-index: 5; 
+}
+.beast_element {
+    position: absolute;
+    /* Change 530px to 533px for mathematically consistent spacing, 
+       or manually adjust it (e.g., 525px) until the gap looks right. */
+    left: 425px; 
+    top: 111px; 
+    width: 690px;
+    height:130px;
+    
+    z-index: 5; 
+}
+
+.back-button,
+a.back-button {
+    position: absolute !important;
+    left: 1177px !important;
+    top: 63px !important;
+    width: 184.25px !important;
+    height: 72px !important;
+
+    background: linear-gradient(180deg, #FFB84E 0%, #FF8A00 100%) !important;
+    border: 6px solid #3C1E00 !important;
+    border-radius: 36px !important;
+    box-shadow: 0 8px 0 #2A1400, inset 0 6px 15px rgba(255, 255, 255, 0.4) !important;
+
+    color: white !important;
+    font-family: 'CookieRunFont', Impact, sans-serif !important;
+    font-weight: 900 !important;
+    font-size: 28px !important;
+    text-transform: none !important;          
+    letter-spacing: normal !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    cursor: pointer !important;
+    transition: all 0.15s !important;
+    overflow: hidden !important;
+    z-index: 999 !important;
+
+    
+    text-shadow:
+        -4px -4px 0 #000, 4px -4px 0 #000,
+        -4px 4px 0 #000, 4px 4px 0 #000,
+        -4px 0 0 #000, 4px 0 0 #000,
+        0 -4px 0 #000, 0 4px 0 #000,
+        0 0 12px rgba(255, 220, 100, 0.95),
+        0 0 20px rgba(255, 180, 60, 0.85) !important;
+
+    
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+
+.back-button::before,
+a.back-button::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: shine 3s infinite;
+}
+
+
+.back-button:hover,
+a.back-button:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 0 #2A1400, inset 0 6px 15px rgba(255,255,255,0.5) !important;
+}
+.back-button:active,
+a.back-button:active {
+    transform: translateY(6px) !important;
+    box-shadow: 0 4px 0 #2A1400, inset 0 0 12px rgba(0,0,0,0.4) !important;
+}
+a.story-button,
+a.builds-button,
+a.skills-button,
+a.back-button,
+.story-button,
+.builds-button,
+.skills-button,
+.back-button {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+
+a.story-button:hover,
+a.builds-button:hover,
+a.skills-button:hover,
+a.back-button:hover,
+a.story-button:focus,
+a.builds-button:focus,
+a.skills-button:focus,
+a.back-button:focus,
+a.story-button:active,
+a.builds-button:active,
+a.skills-button:active,
+a.back-button:active {
+    text-decoration: none !important;
+    outline: none !important;
+}
